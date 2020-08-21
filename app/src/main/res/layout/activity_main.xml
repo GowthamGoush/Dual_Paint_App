@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/sampleA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="FRAGMENT A"
+            android:layout_centerHorizontal="true"/>
+
+        <FrameLayout
+            android:id="@+id/container_a"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/paint_border"
+            android:layout_below="@id/sampleA"/>
+
+        <TextView
+            android:id="@+id/sampleB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="FRAGMENT B"
+            android:layout_below="@id/container_a"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <FrameLayout
+            android:id="@+id/container_b"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/sampleB"
+            android:background="@drawable/paint_border2"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
